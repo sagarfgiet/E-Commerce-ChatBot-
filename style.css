@@ -1,0 +1,109 @@
+/* Basic reset and box-sizing */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-color: #f0f0f0; /* Light background */
+}
+
+.chatbot-container {
+    width: 90%; /* Responsive width */
+    max-width: 400px; /* Maximum width on larger screens */
+    height: 500px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    background-color: #fff;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column;
+    overflow: hidden; /* Prevents content overflow */
+}
+
+.chat-header {
+    background-color: #007bff; /* Primary color */
+    color: white;
+    padding: 15px;
+    text-align: center;
+    border-bottom: 1px solid #ddd;
+    display: flex;
+    justify-content: space-between; /* Align reset button to the right */
+    align-items: center;
+}
+
+.bot-icon {
+    margin-right: 10px;
+    font-size: 1.2em;
+}
+
+#reset-chat {
+    background-color: transparent;
+    border: none;
+    color: white;
+    cursor: pointer;
+}
+
+.chat-messages {
+    flex-grow: 1;
+    overflow-y: auto;
+    padding: 15px;
+    display: flex;
+    flex-direction: column;
+}
+
+.message {
+    padding: 10px;
+    margin-bottom: 10px;
+    border-radius: 8px;
+    max-width: 80%;
+    word-wrap: break-word;
+    clear: both; /* Important for message flow */
+}
+
+.user-message {
+    background-color: #e6f7ff; /* Light blue */
+    align-self: flex-end;
+    float: right;
+}
+
+.bot-message {
+    background-color: #f0f0f0; /* Light gray */
+    float: left;
+}
+
+.chat-input {
+    padding: 15px;
+    border-top: 1px solid #ddd;
+    display: flex;
+}
+
+#user-input {
+    flex-grow: 1;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    margin-right: 10px;
+}
+
+#send-button {
+    background-color: #007bff;
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    .chatbot-container {
+        height: 90vh; /* Full viewport height on smaller screens */
+    }
+}

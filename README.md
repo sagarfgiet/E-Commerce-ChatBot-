@@ -25,7 +25,7 @@ Clone the repository:
 
 bash
 Copy code
-git clone https://github.com/yourusername/ecommerce-chatbot.git
+
 cd ecommerce-chatbot
 Install dependencies:
 
@@ -38,13 +38,13 @@ env
 Copy code
 MONGO_URI=your-mongodb-uri
 OPENAI_API_KEY=your-openai-api-key
-PORT=3000
+PORT=5000
 Start the application:
 
 bash
 Copy code
 npm start
-The chatbot will be available at http://localhost:3000.
+The chatbot will be available at http://localhost:5000.
 
 Integration with eCommerce Platform
 This chatbot can be integrated into popular eCommerce platforms such as:
